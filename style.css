@@ -1,3 +1,6 @@
+:root{
+    --speed : 5 ;
+}
 .machine{
     background-color: peru;
     width: 1000px;
@@ -14,7 +17,7 @@
     background-color: beige;
     border: solid blue 2px;
     text-align: center;
-    font-size: 100pt;
+    font-size: 80pt;
     line-height: 250px;
     z-index: 1;
     overflow: hidden;
@@ -23,7 +26,10 @@
 
 .slot > .value {
     z-index: 3;
-    animation: slotspin infinite 0.5s ;
+    animation-name: slotspin;
+    animation-iteration-count: infinite;
+    animation-duration: calc(1s / var(--speed));
+   
 }
 
 @keyframes slotspin {
@@ -33,4 +39,9 @@
     100%{
         transform: translateY(200px);
     }
+}
+
+
+#inpSpeed{
+    margin-left: 150px;
 }
