@@ -1,6 +1,10 @@
 :root{
     --speed : 5 ;
 }
+
+body{
+    background-color : black ;
+}
 .machine{
     background-color: peru;
     width: 1000px;
@@ -24,12 +28,17 @@
 
 }
 
-.slot > .value {
+
+
+.animation {
     z-index: 3;
     animation-name: slotspin;
     animation-iteration-count: infinite;
     animation-duration: calc(1s / var(--speed));
-   
+
+}
+.off {
+    animation-name: none;	
 }
 
 @keyframes slotspin {
