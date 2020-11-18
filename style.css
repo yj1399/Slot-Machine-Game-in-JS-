@@ -1,0 +1,19 @@
+.machine{
+    background-color: peru;
+    width: 1000px;
+    height: 300px;
+    border: dashed brown 3px;
+    margin: 150px;
+    display: flex;
+}
+
+.slot{
+    height: 250px;
+    width: 300px;
+    margin: 20px;
+    background-color: beige;
+    border: solid blue 2px;
+    text-align: center;
+    font-size: 80pt;
+    line-height: 250px;
+}
